@@ -10,7 +10,7 @@ import Foundation
 import WCDBSwift
 import SwiftyBeaver
 
-extension Database {
+public extension Database {
     func saveOrUpdate<Object>(_ object: Object) where Object: TableCodable  {
         do {
             try WCDBManager.shared.db?.insertOrReplace(objects: object, intoTable: "\(Object.self)")

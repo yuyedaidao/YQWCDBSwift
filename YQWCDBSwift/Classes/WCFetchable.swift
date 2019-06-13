@@ -10,13 +10,13 @@ import Foundation
 import WCDBSwift
 import SwiftyBeaver
 
-protocol WCFetchable {
+public protocol WCFetchable {
     associatedtype T: TableCodable
     static func fetchOne(where condition: Condition?) -> T?
     static func fetch(where condition: Condition?, orderBy orderList: [OrderBy]?, limit: Limit?, offset: Offset?) -> [T]?
 }
 
-extension WCFetchable {
+public extension WCFetchable {
     static func fetchOne(where condition: Condition? = nil) -> T? {
         guard let db = WCDBManager.shared.db else {
             return nil

@@ -10,7 +10,7 @@ import Foundation
 import WCDBSwift
 import SwiftyBeaver
 
-extension Database {
+public extension Database {
     func update<Object>(_ object: Object, where condition: Condition? = nil) where Object : TableEncodable {
         do {
             try WCDBManager.shared.db?.update(table: "\(Object.self)", on: Object.Properties.all, with: object, where: condition)
