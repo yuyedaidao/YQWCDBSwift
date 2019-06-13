@@ -27,12 +27,12 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version = '5.0'
   s.source_files = 'YQWCDBSwift/Classes/**/*'
   
-  s.resource_bundles = {
-    'YQWCDBSwift' => ['YQWCDBSwift/Assets/*.png']
-  }
+#  s.resource_bundles = {
+#    'YQWCDBSwift' => ['YQWCDBSwift/Assets/*.png']
+#  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
@@ -41,4 +41,6 @@ Pod::Spec.new do |s|
   # s.dependency 'SnapKit', '~> 4.0.0'
   # s.dependency 'RxCoreData', '~> 0.5.1'
   # s.dependency 'RxDataSources', '~> 3.0'
+  s.dependency 'WCDB.swift', '1.0.8.2'
+  s.dependency 'SwiftyBeaver'
 end

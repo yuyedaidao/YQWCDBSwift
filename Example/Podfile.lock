@@ -1,0 +1,38 @@
+PODS:
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SwiftyBeaver (1.7.0)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - YQWCDBSwift (0.1.0):
+    - SwiftyBeaver
+    - WCDB.swift (= 1.0.8.2)
+
+DEPENDENCIES:
+  - SwiftyBeaver
+  - WCDB.swift (= 1.0.8.2)
+  - YQWCDBSwift (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SQLiteRepairKit
+    - SwiftyBeaver
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+
+EXTERNAL SOURCES:
+  YQWCDBSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  YQWCDBSwift: c2a33ec554d150146d5394fc677cbb916e2589bb
+
+PODFILE CHECKSUM: 71e61f40066477e22c7c6f919bf484b612d79931
+
+COCOAPODS: 1.7.1

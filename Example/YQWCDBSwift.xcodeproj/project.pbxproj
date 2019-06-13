@@ -32,6 +32,12 @@
 		1F4099D8F31A740D0DC4B742 /* Pods-YQWCDBSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQWCDBSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-YQWCDBSwift_Example/Pods-YQWCDBSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2A88C9AC6D070BE5D0FCBA8E /* Pods_YQWCDBSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQWCDBSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		326FD0E3EBE8CC23E8AF6A5C /* Pods-YQWCDBSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQWCDBSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-YQWCDBSwift_Example/Pods-YQWCDBSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		55F6424F22B1EDEA00444619 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		55F6425122B1EDEA00444619 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		55F6425322B1EE0D00444619 /* WCSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSavable.swift; sourceTree = "<group>"; };
+		55F6425422B1EE0D00444619 /* WCFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCFetchable.swift; sourceTree = "<group>"; };
+		55F6425522B1EE0D00444619 /* WCDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDBManager.swift; sourceTree = "<group>"; };
+		55F6425622B1EE0D00444619 /* WCUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCUpdatable.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YQWCDBSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQWCDBSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +48,11 @@
 		607FACE51AFB9204008FA782 /* YQWCDBSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQWCDBSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7920F7EC7DA143955DABB50A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7920F7EC7DA143955DABB50A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		99E92B91FFDD909B117616A5 /* Pods_YQWCDBSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQWCDBSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E528EFF5447AEB19A99DF7 /* Pods-YQWCDBSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQWCDBSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YQWCDBSwift_Tests/Pods-YQWCDBSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CFF4D9AC1236F5A5965AF1A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FBB3939A1F897479EFF50ED1 /* YQWCDBSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YQWCDBSwift.podspec; path = ../YQWCDBSwift.podspec; sourceTree = "<group>"; };
+		CFF4D9AC1236F5A5965AF1A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FBB3939A1F897479EFF50ED1 /* YQWCDBSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YQWCDBSwift.podspec; path = ../YQWCDBSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55F6424E22B1EDEA00444619 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				55F6424F22B1EDEA00444619 /* .gitkeep */,
+			);
+			name = Assets;
+			path = ../YQWCDBSwift/Assets;
+			sourceTree = "<group>";
+		};
+		55F6425022B1EDEA00444619 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				55F6425122B1EDEA00444619 /* .gitkeep */,
+				55F6425522B1EE0D00444619 /* WCDBManager.swift */,
+				55F6425422B1EE0D00444619 /* WCFetchable.swift */,
+				55F6425322B1EE0D00444619 /* WCSavable.swift */,
+				55F6425622B1EE0D00444619 /* WCUpdatable.swift */,
+			);
+			name = Classes;
+			path = ../YQWCDBSwift/Classes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				55F6424E22B1EDEA00444619 /* Assets */,
+				55F6425022B1EDEA00444619 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for YQWCDBSwift */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -156,7 +186,6 @@
 				B4E528EFF5447AEB19A99DF7 /* Pods-YQWCDBSwift_Tests.debug.xcconfig */,
 				168C987AEA88264EAC991502 /* Pods-YQWCDBSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +242,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QXPHWM9EW2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QXPHWM9EW2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +345,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YQWCDBSwift_Example/Pods-YQWCDBSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework",
 				"${BUILT_PRODUCTS_DIR}/YQWCDBSwift/YQWCDBSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDBSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YQWCDBSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
