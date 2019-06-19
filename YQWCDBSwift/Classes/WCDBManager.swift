@@ -29,9 +29,9 @@ public class WCDBManager {
         db = Database(withFileURL: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("db/wcdb_\(dbName).db"))
         
     }
-    public func createTable<Root>(of type: Root) where Root: TableCodable {
+    public func createTable<Root>(of type: Root.Type) where Root: TableCodable {
         do {
-            try db!.create(table: "\(Root.self)", of: Root.self)
+            try db!.create(table: "\(type)", of: Root.self)
         } catch let error {
             SwiftyBeaver.error(error)
         }
